@@ -1,3 +1,5 @@
+%Requires Imaging Processing Toolbox
+%Requires Deep Learning Toolbox
 original_Image = imread('ctscan.jpg')
 
 if size(original_Image, 3) == 3 %3 refers to color channels(rgb). this converts image to grayscale if its rgb
