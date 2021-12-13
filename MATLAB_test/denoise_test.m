@@ -1,5 +1,5 @@
-%Requires Imaging Processing Toolbox
-%Requires Deep Learning Toolbox
+% Requires Imaging Processing Toolbox
+% Requires Deep Learning Toolbox
 
 % logan 1 is the original image
 logan1 = phantom('Modified Shepp-Logan',256);
@@ -25,7 +25,7 @@ title("logan1: original, logan2: added noise, logan3: denoised");
 
 % Prints the Peak Signal-to-Noise Ratio and Signal-to-Noise Ratio of
 % Noisy and Denoised images
-[peaksnr, snr] = psnr(logan2, logan3);
+[peaksnr, ssnr] = psnr(logan2, logan3);
 fprintf('\n PSNR value is %0.5f', peaksnr);
-fprintf('\n SNR value is %0.5f \n', snr);
+fprintf('\n SNR value is %0.5f \n', ssnr);
 
