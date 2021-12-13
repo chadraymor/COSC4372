@@ -17,7 +17,6 @@ net = denoisingNetwork('DnCNN');
 % logan2 = imnoise(logan1, 'gaussian', 0, 0.03);
 
 hold on
-figure
 for i = [0.01, 0.05, 0.10, 0.15, 0.30, 0.60, 0.90]
     logan2 = imnoise(logan1, 'gaussian', 0, i);
     
